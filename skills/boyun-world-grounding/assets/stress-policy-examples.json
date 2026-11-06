@@ -1,0 +1,148 @@
+{
+  "schema_version": "boyun-stress-policy-examples.v1",
+  "artifact_kind": "planning_only",
+  "purpose": "Illustrative requirement examples, not current protocol parameters, investment advice or executable inputs.",
+  "token_launch": {
+    "stages": [
+      "pre_migration",
+      "migration_pending",
+      "post_migration"
+    ],
+    "transition_rule": "Confirm authoritative venue/program migration state; do not infer from a market-cap level.",
+    "candidate_triggers": [
+      {
+        "id": "cap_x",
+        "stage": "pre_migration",
+        "metric": "declared circulating market cap in USD",
+        "threshold": null,
+        "meaning": "X selected or researched separately",
+        "reference": "consistent supplied method and supply",
+        "event_probability": null
+      },
+      {
+        "id": "cap_y",
+        "stage": "post_migration",
+        "metric": "declared circulating market cap in USD",
+        "threshold": null,
+        "meaning": "Y can change position or campaign policy, not create an executable exit",
+        "event_probability": null
+      },
+      {
+        "id": "fast_drop",
+        "stage": "any verified active trading stage",
+        "metric": "rolling point-to-point return",
+        "threshold": -0.2,
+        "window_seconds": 300,
+        "threshold_status": "illustrative user example, not selected policy",
+        "boundary": "example at or below threshold; strict boundary must be confirmed",
+        "reference": "price at t versus admissible observation at t-300s",
+        "data_requirement": "sufficiently fine timestamped price path; fifteen-minute bars insufficient",
+        "event_probability": null
+      },
+      {
+        "id": "deep_drop",
+        "stage": "any verified active trading stage",
+        "metric": "rolling point-to-point return",
+        "threshold": -0.5,
+        "window_seconds": 3600,
+        "threshold_status": "illustrative user example, not selected policy",
+        "reference": "price at t versus admissible observation at t-3600s",
+        "event_probability": null
+      }
+    ],
+    "responses_to_compare": [
+      "observe_or_ask_user",
+      "reduce_future_discretionary_campaign_spend_if_contract_permits",
+      "staged_exit_subject_to_actual_depth_and_fees",
+      "funded_bounded_buyback_if_selected",
+      "no_action"
+    ],
+    "coupled_failure_example": "Migration delays observation; depth falls; both drop triggers become observable together. Prioritize once; do not spend the same reserve twice. Exit may partially fill or fail.",
+    "remaining_choices": [
+      "reference and observation tolerance",
+      "X/Y definitions",
+      "cash loss/reserve limits",
+      "preferred response policy and priority",
+      "latency/cooldown/recovery"
+    ],
+    "execution_supported_by_example": false
+  },
+  "dex": {
+    "stages": [
+      "bootstrap",
+      "incentivized_growth",
+      "ordinary_operation",
+      "stressed",
+      "recovery"
+    ],
+    "mechanism_variant_required": "constant-product, concentrated-liquidity, orderbook or other; do not blend mechanics",
+    "actors": [
+      "trader",
+      "LP",
+      "arbitrageur",
+      "treasury",
+      "protocol_operator_with_verified_control_rights"
+    ],
+    "candidate_branches": [
+      {
+        "id": "lp_exit",
+        "condition": "rapid removal of usable pool depth",
+        "threshold": null,
+        "measurement": "reserve/depth at specified trade size; concentrated liquidity needs active ranges",
+        "responses": [
+          "revise treasury incentive plan if controllable",
+          "communicate observed depth risk",
+          "do nothing"
+        ],
+        "effects": "quotes worsen, routes shift, LP fees/inventory change",
+        "event_probability": null
+      },
+      {
+        "id": "incentive_expiry",
+        "condition": "scheduled reward expiry followed by possible LP exit",
+        "threshold": null,
+        "measurement": "reward schedule, positions and exit observations",
+        "responses": [
+          "compare funded extension",
+          "targeted incentives under supported design",
+          "allow expiry"
+        ],
+        "effects": "treasury cost, adverse selection and fee revenue",
+        "event_probability": null
+      },
+      {
+        "id": "route_loss",
+        "condition": "volume or executed quotes lose competitiveness",
+        "threshold": null,
+        "measurement": "routing/quotes plus scoped executed volume, not TVL alone",
+        "responses": [
+          "compare only fee/control changes actually permitted",
+          "incentives or no intervention"
+        ],
+        "effects": "LP revenue, treasury runway and trader cost",
+        "event_probability": null
+      },
+      {
+        "id": "data_or_chain_failure",
+        "condition": "stale dependent data or chain congestion",
+        "threshold": null,
+        "measurement": "only relevant feeds, confirmations, errors and quote freshness",
+        "responses": [
+          "suspend dependent recommendations",
+          "retry within bounds when allowed",
+          "pause controlled service if authorized"
+        ],
+        "effects": "unknown conditions, delayed or failed transactions; recovery criteria required",
+        "event_probability": null
+      }
+    ],
+    "restrictions": [
+      "protocol_admin_cannot_assume_control_of_LP_wallets",
+      "no_assumed_pause_or_fee_admin_right",
+      "do_not_invent_oracle_dependence_for_plain_amm",
+      "LP_PnL_not_protocol_treasury_profit"
+    ],
+    "stress_combination": "Rewards expire, LPs withdraw and volatile external price generates adverse-selection flow before operators can respond.",
+    "execution_supported_by_example": false
+  }
+}

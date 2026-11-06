@@ -1,0 +1,158 @@
+{
+  "schema_version": "boyun-stress-policy-plan.v1",
+  "artifact_kind": "planning_only",
+  "id": null,
+  "world_brief_id": null,
+  "objective": null,
+  "horizon": null,
+  "domain": {
+    "product_type": null,
+    "mechanism_variant": null,
+    "chain": null,
+    "venues": [],
+    "mechanism_source_ids": []
+  },
+  "accepted_constraints": [],
+  "lifecycle_states": [],
+  "transitions": [],
+  "discovery_coverage": {
+    "market_path": null,
+    "depth_concentration": null,
+    "treasury_cashflows": null,
+    "incentives_information": null,
+    "operations_security": null,
+    "external_catalysts": null,
+    "recovery_exit": null
+  },
+  "triggers": [],
+  "responses": [],
+  "scenarios": [],
+  "choice_checks": [],
+  "material_questions": [],
+  "execution_semantics": {
+    "event_clock": null,
+    "observation_clock": null,
+    "same_timestamp_ordering": null,
+    "simultaneous_trigger_resolution": null,
+    "fund_reservation": null,
+    "pending_action_on_transition": null,
+    "max_decisions_or_steps": null,
+    "recovery_policy": null
+  },
+  "probability_policy": {
+    "event_occurrence": "unknown_until_supported_or_explicitly_assumed",
+    "shock_severity": "separate_from_occurrence",
+    "model_action_judgment": "not_event_probability",
+    "execution_success": "separate_mechanism",
+    "dependent_hazards": "not_assumed_independent",
+    "aggregation_weights": null
+  },
+  "engine_readiness": {
+    "target_module": null,
+    "supported_requirements": [],
+    "unsupported_requirements": [],
+    "execution_ready": false
+  },
+  "report_requirements": [
+    "lifecycle_and_trigger_timeline",
+    "detected_and_unknown_conditions",
+    "observations_per_actor",
+    "proposed_chosen_and_rejected_responses",
+    "execution_delays_failures_partial_fills",
+    "cash_token_resource_journal",
+    "conditional_outcomes",
+    "blocked_and_unobserved_paths",
+    "drawdown_recovery_and_terminal_inventory",
+    "comparison_to_no_action"
+  ],
+  "record_shapes": {
+    "state": {
+      "id": null,
+      "meaning": null,
+      "entry_evidence": null,
+      "available_mechanics": []
+    },
+    "transition": {
+      "id": null,
+      "from_state_id": null,
+      "to_state_id": null,
+      "protocol_evidence_required": null,
+      "detection_source_ids": [],
+      "mechanics_changed": [],
+      "if_unconfirmed": null
+    },
+    "trigger": {
+      "id": null,
+      "applicable_state_ids": [],
+      "metric": null,
+      "unit": null,
+      "source_ids": [],
+      "reference_definition": null,
+      "comparison": null,
+      "threshold": null,
+      "threshold_provenance": null,
+      "event_window_seconds": null,
+      "observation_cadence_seconds": null,
+      "anchor_tolerance_seconds": null,
+      "freshness_max_seconds": null,
+      "missing_data_result": "unknown",
+      "detection_latency_seconds": null,
+      "visible_to_actor_ids": [],
+      "persistence_rule": null,
+      "cooldown_seconds": null,
+      "rearm_condition": null,
+      "empirical_support": null
+    },
+    "response": {
+      "id": null,
+      "trigger_ids": [],
+      "actor_id": null,
+      "control_right_source_ids": [],
+      "decision_mode": null,
+      "feasible_choice_ids": [],
+      "selected_choice_id": null,
+      "choice_status": "proposed",
+      "preconditions": [],
+      "funding_account_id": null,
+      "spend_limit": null,
+      "unit": null,
+      "latency_seconds": null,
+      "execution_constraints": [],
+      "failure_or_partial_fill": null,
+      "fallback_response_id": null,
+      "priority": null,
+      "recovery_condition": null,
+      "engine_target": null
+    },
+    "scenario": {
+      "id": null,
+      "reason_included": null,
+      "initial_state_id": null,
+      "transition_ids": [],
+      "shock_path": [],
+      "dependent_scenario_ids": [],
+      "observation_assumptions": [],
+      "response_policy_ids": [],
+      "occurrence_probability": null,
+      "probability_provenance": "unknown",
+      "terminal_conditions": [],
+      "stress_test_not_frequency_estimate": true
+    },
+    "choice_check": {
+      "response_id": null,
+      "check": null,
+      "status": null,
+      "reason": null,
+      "user_decision_required": null,
+      "resolution": null
+    },
+    "material_question": {
+      "id": null,
+      "question": null,
+      "why_it_changes_the_world": null,
+      "choices": [],
+      "recommendation": null,
+      "existing_answer": null
+    }
+  }
+}
