@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Research Foundations"
+  short_description: "Define decisions, evidence and research boundaries"
+  default_prompt: "Use $crypto-research-foundations to prepare a decision-focused research brief with evidence, assumptions and next steps."

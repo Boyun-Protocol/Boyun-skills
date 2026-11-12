@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Launch Research"
+  short_description: "Compare funded launch plans and realizable proceeds"
+  default_prompt: "Use $crypto-launch-research to prepare a decision-focused research brief with evidence, assumptions and next steps."

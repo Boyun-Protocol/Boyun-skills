@@ -1,0 +1,84 @@
+{
+  "schema_version": "crypto-market-maker-mandate.v1",
+  "artifact_kind": "planning_only",
+  "id": null,
+  "provider": null,
+  "engagement_status": "unverified",
+  "evidence": {
+    "official_service_sources": [],
+    "dated_quote_artifact": null,
+    "signed_mandate_artifact": null,
+    "independent_performance_evidence": []
+  },
+  "relationship": {
+    "kind": null,
+    "possible_kinds": [
+      "contracted_agent",
+      "independent_principal",
+      "other_explicit_structure"
+    ],
+    "assets_owned_by": null,
+    "custody_and_control": null,
+    "who_bears_trading_pnl": null
+  },
+  "scope": {
+    "chain": null,
+    "venues": [],
+    "assets": [],
+    "supported_lifecycle_states": [],
+    "start_condition": null,
+    "duration_days": null,
+    "reporting_requirements": []
+  },
+  "fees": {
+    "amount": null,
+    "currency": null,
+    "schedule": null,
+    "refundability": null,
+    "minimum_duration": null,
+    "upfront_cost_budget_overlap": null
+  },
+  "capital": {
+    "base_asset_amount": null,
+    "token_inventory_amount": null,
+    "inventory_units": null,
+    "funding_accounts": [],
+    "external_capital_ownership": null,
+    "reserve_floor": null,
+    "locked_or_encumbered_balances": null,
+    "loan_option_or_repayment_terms": null
+  },
+  "mandate": {
+    "objective": null,
+    "allowed_actions": [],
+    "spend_and_inventory_limits": null,
+    "performance_metrics": [],
+    "no_guaranteed_volume_price_or_return": true
+  },
+  "pause_and_exit": {
+    "user_pause_right": null,
+    "provider_acceptance_required": null,
+    "cancellation_delay_seconds": null,
+    "pending_transaction_policy": null,
+    "termination_and_withdrawal_terms": null,
+    "terminal_inventory_and_obligations": null
+  },
+  "adverse_scenarios": [
+    "liquidity_withdrawal",
+    "inventory_loss",
+    "capital_locked_or_withdrawal_delayed",
+    "provider_or_data_unavailable",
+    "migration_delayed_or_unsupported",
+    "pause_not_immediately_effective",
+    "fee_and_capital_budget_conflict"
+  ],
+  "integration": {
+    "capital_envelope": null,
+    "unit": null,
+    "fee_bucket_mapping": null,
+    "working_capital_bucket_mapping": null,
+    "engine_support": null,
+    "ready": false,
+    "blocking_reasons": []
+  }
+}

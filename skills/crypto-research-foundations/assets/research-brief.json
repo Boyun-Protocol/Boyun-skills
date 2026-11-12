@@ -1,0 +1,91 @@
+{
+  "schema_version": "crypto-research-brief.v1",
+  "artifact_kind": "planning_only",
+  "id": null,
+  "decision": {
+    "question": null,
+    "alternatives": [],
+    "outcome": null,
+    "horizon": {
+      "value": null,
+      "unit": null
+    }
+  },
+  "scope": {
+    "chains": [],
+    "venues": [],
+    "population": null,
+    "event_time_window": null,
+    "evidence_cutoff": null
+  },
+  "access": {
+    "mode": "public_only",
+    "research_spend_cap": null,
+    "inference_spend_cap": null,
+    "currency": null,
+    "private_output_root": null
+  },
+  "known_answers": [],
+  "open_questions": [],
+  "evidence_requirements": [],
+  "sources": [],
+  "claims": [],
+  "counterevidence": [],
+  "readiness": {
+    "research_ready": false,
+    "world_construction_ready": false,
+    "execution_ready": false,
+    "blocking_reasons": []
+  },
+  "record_shapes": {
+    "open_question": {
+      "id": "q1",
+      "question": null,
+      "why_it_matters": null,
+      "choices": [],
+      "recommended_choice_id": null,
+      "recommendation_reason": null,
+      "answer": null
+    },
+    "requirement": {
+      "id": "r1",
+      "research_question": null,
+      "decision_changed": null,
+      "measurement_needed": null,
+      "priority": null,
+      "if_missing": null,
+      "claim_ids": []
+    },
+    "source": {
+      "id": "s1",
+      "url_or_artifact": null,
+      "publisher": null,
+      "retrieved_at": null,
+      "event_window": null,
+      "population": null,
+      "measurement_definition": null,
+      "raw_sha256": null,
+      "gaps": []
+    },
+    "claim": {
+      "id": "c1",
+      "value": null,
+      "unit": null,
+      "status": "unknown",
+      "source_ids": [],
+      "input_claim_ids": [],
+      "transformation": null,
+      "assumption_approval": null,
+      "permitted_use": null,
+      "prohibited_inference": null,
+      "uncertainty": null
+    }
+  },
+  "contingency_planning": {
+    "plan_id": null,
+    "status": "not_reviewed",
+    "material_lifecycle_changes": [],
+    "required_path_resolution_seconds": null,
+    "coverage_gaps": []
+  }
+}

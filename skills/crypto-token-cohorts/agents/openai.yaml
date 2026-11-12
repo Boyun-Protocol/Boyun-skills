@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Token Cohorts"
+  short_description: "Build dated token samples with explicit exclusions"
+  default_prompt: "Use $crypto-token-cohorts to prepare a decision-focused research brief with evidence, assumptions and next steps."

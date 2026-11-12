@@ -1,0 +1,93 @@
+{
+  "schema_version": "crypto-token-cohort-plan.v1",
+  "artifact_kind": "planning_only",
+  "research_brief_id": null,
+  "scope": {
+    "chain": null,
+    "venues": [],
+    "cutoff": null,
+    "lookback_days": null,
+    "age_reference": null,
+    "minimum_age_days": null
+  },
+  "selection": {
+    "target_shortlist_size": null,
+    "cap_floor_usd": null,
+    "accepted_cap_evidence": [],
+    "focal_categories": [],
+    "broad_categories": [
+      "animals",
+      "characters",
+      "events",
+      "apps_tools",
+      "companies_brands",
+      "parodies",
+      "politics"
+    ],
+    "focal_exceptions": [],
+    "ranking_dimensions": [
+      "cap_evidence",
+      "liquidity",
+      "volume",
+      "freshness",
+      "relevance"
+    ]
+  },
+  "first_day_screen": {
+    "reference": "declared_launch_time",
+    "drawdown_threshold_fraction": null,
+    "formula": "price_near_launch_plus_24h / first_day_peak - 1",
+    "candle_resolution_minutes": null,
+    "endpoint_tolerance_minutes": null,
+    "outlier_treatment": null,
+    "missing_history": "unknown",
+    "population_interpretation": null
+  },
+  "metrics": [
+    "reported_market_cap_usd",
+    "historical_reported_cap_high_usd",
+    "fdv_usd",
+    "reference_pool_liquidity_usd",
+    "volume_24h_usd",
+    "buys_24h",
+    "sells_24h",
+    "quote_timestamp"
+  ],
+  "market_context": {
+    "chain_volume_windows": [],
+    "venue_volume_windows": [],
+    "tvl_scope": null,
+    "provider_disagreements": []
+  },
+  "outputs": {
+    "universe": null,
+    "shortlist": null,
+    "collapse_controls": null,
+    "unknown_history": null,
+    "request_log": null,
+    "source_manifest": null
+  },
+  "token_record_shape": {
+    "chain": null,
+    "mint": null,
+    "primary_category": null,
+    "secondary_categories": [],
+    "age_evidence": null,
+    "cap_evidence": [],
+    "first_day_status": "unknown",
+    "liquidity_status": "unknown",
+    "volume_status": "unknown",
+    "quote_freshness": null,
+    "selection_reason": null,
+    "exception_id": null,
+    "source_ids": []
+  },
+  "limitations": [],
+  "contingency_planning": {
+    "plan_id": null,
+    "status": "not_reviewed",
+    "material_lifecycle_changes": [],
+    "required_path_resolution_seconds": null,
+    "coverage_gaps": []
+  }
+}

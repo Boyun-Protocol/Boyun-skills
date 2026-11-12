@@ -1,7 +1,9 @@
 from pathlib import Path
 import json, re
 root = Path(__file__).resolve().parents[1]
-for skill in (root / 'skills').iterdir():
+for skill in sorted((root / 'skills').iterdir()):
+    if not skill.is_dir() or skill.name.startswith('.'):
+        continue
     source = skill / 'SKILL.md'
     text = source.read_text()
     assert text.startswith('---\n') and '\nname:' in text and '\ndescription:' in text

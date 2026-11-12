@@ -1,0 +1,84 @@
+{
+  "schema_version": "crypto-launch-research-plan.v1",
+  "artifact_kind": "planning_only",
+  "research_brief_id": null,
+  "objective": {
+    "metric": null,
+    "horizon_days": null,
+    "residual_inventory_tolerance": null
+  },
+  "venue": {
+    "chain": null,
+    "launchpad": null,
+    "mechanism_sources": [],
+    "effective_date": null,
+    "supported_lifecycle": [],
+    "unsupported_lifecycle": []
+  },
+  "funding": {
+    "founder_contribution_usd": null,
+    "external_actor_capital_usd": null,
+    "external_capital_status": "unknown",
+    "live_inference_cap_usd": null
+  },
+  "income_routes": [],
+  "ownership_and_accounts": [],
+  "partner_information_rights": [],
+  "plans": [],
+  "plan_shape": {
+    "id": null,
+    "approval": "proposed",
+    "allocations_usd": {
+      "campaigns": null,
+      "partnerships": null,
+      "founder_entry": null,
+      "liquidity": null,
+      "buyback_reserve": null,
+      "operations": null,
+      "cash_reserve": null
+    },
+    "campaign_contracts": [],
+    "exit_policy": null,
+    "assumption_ids": []
+  },
+  "campaign_contract_shape": {
+    "payer": null,
+    "recipient": null,
+    "cash_fee_usd": null,
+    "token_compensation": null,
+    "delivery": null,
+    "audience_overlap_assumption": null,
+    "disclosure": null,
+    "source_ids": []
+  },
+  "cash_accounting": {
+    "consolidation_scope": null,
+    "profit_formula": "prior_owner_withdrawals_plus_ending_withdrawable_cash_minus_owner_contributions",
+    "costs_already_reflected_in_cash": true,
+    "show_residual_tokens_separately": true,
+    "show_locked_balances_separately": true,
+    "prior_withdrawals_excluded_from_ending_cash": true
+  },
+  "comparisons": [
+    "no_launch",
+    "staged_launch",
+    "marketing_mix",
+    "capital_depth_mix"
+  ],
+  "readiness_gates": {
+    "cashflows_specified": false,
+    "venue_supported": false,
+    "information_rights_specified": false,
+    "costs_sourced_or_labelled": false,
+    "exit_feasible": false,
+    "paid_pilot_authorized": false
+  },
+  "blocking_reasons": [],
+  "contingency_planning": {
+    "plan_id": null,
+    "status": "not_reviewed",
+    "material_lifecycle_changes": [],
+    "required_path_resolution_seconds": null,
+    "coverage_gaps": []
+  }
+}

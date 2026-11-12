@@ -4,8 +4,11 @@ First-party agent skills for [Boyun-core](https://github.com/Boyun-Protocol/Boyu
 
 | Skill | Purpose |
 | --- | --- |
-| `boyun-world-grounding` | Build evidence registers, source-or-cause support and reviewable world inputs. |
-| `boyun-financial-reports` | Produce structured reports from recorded actor decisions, settlements and coverage. |
+| `crypto-research-foundations` | Define and execute decision-focused crypto research, evidence requirements, source provenance, missing data and research briefs before simulation modeling. |
+| `crypto-token-cohorts` | Research recent token launches and construct dated comparison cohorts using public or authorized market data with survivorship bias controls. |
+| `crypto-launch-research` | Prepare evidence-based launch simulations and compare capital, marketing, partner, liquidity, buyback and no-launch plans. |
+| `boyun-world-grounding` | Build evidence registers, source-or-cause support, actor incentives, and reviewable world inputs for Boyun simulation. |
+| `boyun-financial-reports` | Produce structured, decision-grade reports from recorded actor decisions, settlements and coverage across paired bull/bear regimes. |
 
 ## Installation
 
